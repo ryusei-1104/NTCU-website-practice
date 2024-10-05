@@ -1,0 +1,2 @@
+<P style="color: red;"> paragraph </P>
+        <img src="圖片路徑" alt=" 圖片說明" width="數字/百分比" height="數字/百分比">

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <style> 
+        p
+        {
+            color:blue;
+        }
+        body{
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            justify-content: center;
+        }
+        #form
+        {
+            border: 5px double;
+            border-color:wheat;
+            margin: auto;
+            background-color:antiquewhite;
+            padding:15px 20px;
+        }
+        </style>
+        
+    </head>
+    <body>
+        <h1> Welcome</h1>
+        <script>
+            function login()
+            {
+                const accelment = document.getElementById('Account');
+                const acc= accelment.value;
+                const Passelement = document.getElementById('Password');
+                const Pass = Passelement.value;
+                if(acc == "12321"&& Pass == "1234")
+                {
+                    location.href = 'test2.html'
+                    //alert("welcome");
+                    
+                }
+                else
+                {
+                    alert("wrong!!!");
+                }
+            }
+        </script>
+        <div>
+            
+            <div id = "form">   
+            <form>
+                <label for="Account"> Account : </label><br>
+                <input type="text" name="Account" id ="Account"><br>
+                <label for="Password"> Password : </label><br>
+                <input type="text" name="Password" id ="Password"><br>
+                <input type="button" name=" login" value ="login" onclick = "login();">               
+            </form>
+        </div>
+    </body>
+</html>
+
+
+
+
